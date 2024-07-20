@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="formdata.php" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="password">Secret Code:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+    <input type="radio" id="others" name="gender" value="others"><label for="others">Others</label><br><br>
+    
+    <label for="address">Address:</label>
+    <textarea name="address" id="address"></textarea><br><br>
+    
+    <label for="role">Job Role:</label>
+    <select name="role" id="role">
+        <option value="Front end">Front end</option>
+        <option value="Back end">Back end</option>
+        <option value="Full stack" selected>Full stack</option>
+        <option value="development">Development</option>
+    </select><br><br>
+    
+    <label for="skill">Skills:</label>
+    <input type="checkbox" id="c++" name="skill[]" value="C++"><label for="c++">C++</label>
+    <input type="checkbox" id="c" name="skill[]" value="C"><label for="c">C</label>
+    <input type="checkbox" id="java" name="skill[]" value="Java"><label for="java">Java</label>
+    <input type="checkbox" id="python" name="skill[]" value="Python"><label for="python">Python</label><br><br>
+    
+    <label for="date">Interview Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="experience">Experience:</label>
+    <input type="number" min="0" max="3" id="experience" name="experience"><br><br>
+    
+    <label for="resume">Resume:</label>
+    <input type="file" id="resume" name="resume"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+
+</body>
+</html>
